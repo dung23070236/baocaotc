@@ -6,36 +6,100 @@
         <title>Báo cáo tài chính</title>
     </head>
     <body>
-        <h1 class="heading-primary">           
+        <h1 class="heading-primary" align="center">           
             Báo cáo tài chính  
+            <br>
+            Tiết kiệm - Đầu tư - Vững tương lai
         </h1>
-        <table width="400" boder="2" cellpadding="5" align="center">
+        
+        <table width="500" border="4" cellpadding="5" align="center" >
             <tr>
                     <td>Danh mục</td>
                     <td>Số tiền</td>
+                    
             </tr>
             <tr>
-                <td>Danh mục A</td>
+                <td>
+                    <div class="form-group">
+                        <i class="far fa-user"></i>
+                        <input type="text" class="form-input" placeholder="Tên danh mục">
+                    </div>
+                </td>
                 <td>
                     <input type="number" id="num1" >
                 </td>
+                
             </tr>
             <tr>
-                <td>Danh mục B</td>
+                <td>
+                    <div class="form-group">
+                        <i class="far fa-user"></i>
+                        <input type="text" class="form-input" placeholder="Tên danh mục">
+                    </div>
+                </td>
                 <td>
                     <input type="number" id="num2">
                 </td>
             </tr>
             <tr>
-                <td>Danh mục C</td>
+                <td>
+                    <div class="form-group">
+                       <i class="far fa-user"></i>
+                       <input type="text" class="form-input" placeholder="Tên danh mục">
+                    </div>
+                </td>
                 <td>
                     <input type="number" id="num3">
                 </td>
             </tr>
             <tr>
-                <td>Tổng</td>
                 <td>
-                    <button onclick="tinhTong()">Tổng</button>
+                    <div class="form-group">
+                        <i class="far fa-user"></i>
+                        <input type="text" class="form-input" placeholder="Tên danh mục">
+                    </div>
+                </td>
+                <td>
+                    <input type="number" id="num4" >
+                </td>   
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <i class="far fa-user"></i>
+                        <input type="text" class="form-input" placeholder="Tên danh mục">
+                    </div>
+                </td>
+                <td>
+                    <input type="number" id="num5" >
+                </td>   
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <i class="far fa-user"></i>
+                        <input type="text" class="form-input" placeholder="Tên danh mục">
+                    </div>
+                </td>
+                <td>
+                    <input type="number" id="num6" >
+                </td>   
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <i class="far fa-user"></i>
+                        <input type="text" class="form-input" placeholder="Tên danh mục">
+                    </div>
+                </td>
+                <td>
+                    <input type="number" id="num7" >
+                </td>   
+            </tr>
+            <tr>
+                <td>Số Tiền</td>
+                <td>
+                    <button onclick="tinhTong()" >Tổng</button>
                     <p id="ketqua"></p>
                 </td>
                 <script>
@@ -43,11 +107,25 @@
                         var num1 = document.getElementById("num1").value;
                         var num2 = document.getElementById("num2").value;
                         var num3 = document.getElementById("num3").value;
-                        var tong = parseInt(num1) + parseInt(num2) + parseInt(num2)
+                        var num4 = document.getElementById("num4").value;
+                        var num4 = document.getElementById("num5").value;
+                        var num4 = document.getElementById("num6").value;
+                        var num4 = document.getElementById("num7").value;
+                        var tong = parseInt(num1) + parseInt(num2) + parseInt(num2) + parseInt(num4) + parseInt(num5) + parseInt(num6) + parseInt(num7)
                         document.getElementById("ketqua").innerHTML = tong;
                     }
                 </script>
             </tr>
+            <tr>
+                <td>Cập nhật lần cuối ngày:</td>
+                <td>
+                <div class="form-group">
+                    <i class="far fa-user"></i>
+                    <input type="text" class="form-input" placeholder="Ngày">
+                 </div>
+                </td>
+            </tr>  
         </table>
+        
     </body>
 </html>
